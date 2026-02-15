@@ -33,7 +33,7 @@ header, section {
 
 
 #home {
-    background-image: url(/images/background\ img.png);
+    background-image: url(./images/background\ img.png);
     background-repeat: repeat;
     background-position: center;
     
@@ -54,7 +54,7 @@ header, section {
 
 #work {
  background-color: #F3E8FF;
-  background-image: url(/images/wave\ \(2\).svg);
+  background-image: url(./images/wave\ \(2\).svg);
     background-repeat: repeat;
     background-position: center;
     background-size: cover;
@@ -63,5 +63,6 @@ header, section {
 #location {
    background-color: #F3E8FF;
 }
+
 
 
