@@ -156,7 +156,7 @@
     gap: 2em;
     animation: spin 35s infinite linear;
     margin-right: 30px;
-    padding: 20px;
+    padding-bottom: 10px;
 
 }
 
@@ -337,4 +337,5 @@ footer {
     cursor: pointer;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     z-index: 100;
+
 }
