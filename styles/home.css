@@ -1,0 +1,340 @@
+/* Main */
+
+#home {
+    display: flex;
+    min-height: calc(100vh - 90px);
+
+}
+
+
+
+#cta {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    margin-top: 5%
+    
+}
+
+#cta_buttons {
+    display: flex;
+    background-color: #ED9851;
+    width: max-content;
+    padding: 10px;
+     border-radius: 10px;
+      transition: 0.3s ease-in-out;
+}
+
+
+#cta_buttons a {
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    color: #fff;
+}
+
+#cta_buttons:hover {
+    color: #1d1d1d;
+    background-color: #353131;
+   
+}
+
+
+
+#cta .title {
+    font-size: 4rem;
+}
+#cta .title span {
+    color: #9065c0;
+}
+
+.social-media-buttons {
+    display: flex;
+    justify-content: space-around;
+    gap: 18px;
+    align-items: center;
+    font-weight: 600;
+    background-color: #ED9851;
+    max-width: 50%;
+    padding: 8px;
+    border-radius: 10px;
+    color: #fff;
+
+    
+}
+
+
+
+
+
+
+.social-media-buttons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 45px;
+    background-color: #fff;
+    font-size: 1.25rem;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #1d1d1d;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    transition: 0.4s ease;
+}
+
+.social-media-buttons a:hover {
+    background-color: #B9A2D2;
+    transition: 0.5s ease-in-out;
+    transform: scale(1.1);
+    rotate: 10deg;
+}
+
+
+#banner {
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+#banner img {
+    height: 100%;
+    width: fit-content;
+}    
+
+
+.services p span {
+    font-weight: 600;
+    color: #e06a2b;
+
+}
+
+
+
+/* SECTION 2*/ 
+
+
+
+#nosso_trabalho h1 {
+    text-align: center;
+    font-size: 45px;
+}
+
+
+
+
+
+
+
+/* carrosel infinito */
+.carousel {
+  margin: 70px auto; 
+  width: 90%;
+  display: flex;
+  overflow-x: auto;
+  padding: 20px;
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 0) 
+    );
+  
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+
+.group, .group2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    animation: spin 35s infinite linear;
+    margin-right: 30px;
+    padding: 20px;
+
+}
+
+
+
+
+
+.card {
+    flex: 0 0 5em;
+    height: 5em;
+    padding: 1em;
+    background-color: hsl(200, 48%, 96%);            
+    font-size: 3rem;
+    border-radius: 3rem;
+    text-align: center;
+    align-content: center;
+    box-shadow:  0 12px 24px hsla(220,100%, 20%, .1);
+    backdrop-filter: blur(10px);
+    max-width: 200px;
+    height: 200px;
+}
+
+@keyframes spin {
+    from {translate: 0;}
+    to {translate: -100%;}
+}
+
+
+.card p {
+    font-size: 1.0rem;
+    margin-top: 0.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+
+.services p {
+    margin-top: 15px;
+    font-size: 18px;
+text-align: center;
+
+}
+
+/*galeria */ 
+
+.gallery {
+    width: 50%;
+    margin: 100px auto 50px;
+    display: grid;
+    grid-template-columns:  repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+}
+
+.gallery img {
+    width: 90%;
+    height: auto;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+
+.gallery img:hover {
+    transform: scale(1.05) rotate(-2deg);
+
+}
+
+
+/* SECTION LOCATION */
+
+
+#box h1 {
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 40px;
+} 
+#location {
+    
+    text-align: center;
+}
+
+iframe {
+    border-radius: 2em;
+    border: none;
+    opacity: 0.7;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+iframe:hover {
+    transform: scale(1.02);
+    opacity: 1;
+    transition: 0.4s ease;
+}
+
+
+
+
+footer {
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    padding: 0 !important;
+}
+
+.footer-container {
+    background-color: #1a1a1a;
+    padding: 90px 0;
+}
+
+#work h1 {
+    text-align: center;
+    font-size: 45px;
+}
+
+#work {
+    scroll-margin-top: 100px;
+}
+
+.shape {
+
+  position: absolute;
+  width: 820px;
+  height: 820px;
+  background: #e6d6fb00;
+  border-radius: 50%;
+  right: 8%;
+  top: 12%;
+  z-index: -1;
+}
+
+/* png de pata */ 
+
+/* Estilo do Modal (Janela que abre) */
+#modal-galeria {
+    border: none;
+    border-radius: 15px;
+    padding: 0;
+    width: 90vw;      /* Ocupa 90% da largura da tela */
+    max-width: 600px; /* Mas não passa de 600px no PC */
+    background: white;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    
+    /* Centralização Mágica */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+}
+
+#modal-galeria::backdrop {
+    background: rgba(0, 0, 0, 0.8); /* Fundo escuro */
+}
+
+/* Força a imagem a ser um quadrado perfeito ao abrir */
+#modal-galeria img {
+    width: 100%;
+    aspect-ratio: 1 / 1; 
+    object-fit: cover; /* Faz a foto preencher o quadrado sem achatar */
+    display: block;
+    border-radius: 10px 10px 0 0; /* Arredonda só em cima */
+}
+
+/* Botão Fechar */
+.btn-fechar {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 100;
+}
